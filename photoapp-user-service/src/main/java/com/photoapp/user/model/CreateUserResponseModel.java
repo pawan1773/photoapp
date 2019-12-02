@@ -1,21 +1,11 @@
 package com.photoapp.user.model;
 
-import java.util.List;
+public class CreateUserResponseModel {
 
-public class UserResponseModel {
-	private String userId;
 	private String firstName;
 	private String lastName;
 	private String email;
-	private List<AlbumResponseModel> albums;
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
+	private String userId;
 
 	public String getFirstName() {
 		return firstName;
@@ -41,12 +31,11 @@ public class UserResponseModel {
 		this.email = email;
 	}
 
-	public List<AlbumResponseModel> getAlbums() {
-		return albums;
+	public String getUserId() {
+		return userId;
 	}
 
-	public void setAlbums(List<AlbumResponseModel> albums) {
-		this.albums = albums;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-
 }
